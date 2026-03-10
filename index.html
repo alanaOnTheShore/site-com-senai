@@ -61,10 +61,33 @@
         <section id="contatos">
             <h2>Contatos</h2>
             <p>Tem um projeto em mente? Entre em contato.</p>
-            <address>
-                E-mail: <a href="mailto:contatoalanapsn@gmail.com">contatoalanapsn@gmail.com</a><br>
-                Telefone: <a href="tef:+5547996502952">(47) 99650-2952</a>
-            </address>
+            <form action="">
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" required><br>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="telefone">Telefone: </label>
+                <input type="tel" id="telefone" name="telefone"><br>
+
+                <label for="assunto">Assunto:</label>
+                <select name="assunto" id="assunto">
+                    <option value="orçamento">Orçamento</option>
+                    <option value="duvida">Duvida</option>
+                    <option value="outro">Outro</option>
+                </select><br>
+
+                <label for="mensagem">Mensagem: </label>
+                <textarea name="mensagem" id="mensagem" cols="20" rows="5" required></textarea><br>
+                
+                <input type="checkbox" id="inscricao" name="inscricao">
+                <label for="inscricao">Deseja receber minha newslatter? Fique por dentro!</label>
+                <br>
+
+                <input type="submit" value="Enviar mensagem">
+
+            </form>
         </section>
     </footer>
 </body>
